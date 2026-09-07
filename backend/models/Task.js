@@ -6,7 +6,7 @@ const TaskSchema = new mongoose.Schema({
   // dangerouslySetInnerHTML and never sanitized here or on output — stored XSS.
   description: { type: String, default: '' },
   status: { type: String, default: 'pending' },
-  owner: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  
 });
 
 module.exports = mongoose.model('Task', TaskSchema);
